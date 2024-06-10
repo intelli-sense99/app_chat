@@ -81,11 +81,11 @@ if (isset($_GET['id'])) {
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600"><i class="fa-solid fa-envelope-circle-check fs-4 me-2 "></i>Email</p>
-                                            <h5 class="text-muted f-w-400"><?php echo $email; ?></h5>
+                                            <h5 class="text-muted f-w-400"><?php echo $email ??  "empty"; ?></h5>
                                         </div>
                                         <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600"><i class="fa-solid fa-phone fs-4 me-2"></i>Phone</p>
-                                            <h5 class="text-muted f-w-400"><?php echo $phone; ?></h5>
+                                            <h5 class="text-muted f-w-400"><?php echo $phone ?? "empty"; ?></h5>
                                         </div>
                                     </div>
                                     <hr>
@@ -96,7 +96,7 @@ if (isset($_GET['id'])) {
                                         </div>
                                         <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600"><i class="fa-solid fa-handshake fs-4 me-2"></i>Status</p>
-                                            <h5 class="text-muted f-w-400"><?php echo ucfirst($status); ?></h5>
+                                            <h5 class="text-muted f-w-400"><?php echo ucfirst($status) ?? "empty"; ?></h5>
                                         </div>
                                     </div>
                                     <ul class="social-link list-unstyled m-t-40 m-b-10">

@@ -86,6 +86,8 @@ if (count($errors) == 0) {
     $lname = $_POST['lname'];
     $phone = $_POST['phone'];
     $status = mysqli_escape_string($connection, $_POST['status']);
+    // echo $status;
+    // die;
     $image = $unique_name;
 
     $table = 'register';
@@ -98,6 +100,7 @@ if (count($errors) == 0) {
     } else {
         $errors[] = 'Invalid Credentials!';
     }
+    
 } else {
 
     $_SESSION['error'] = $errors;

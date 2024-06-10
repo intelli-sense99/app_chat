@@ -101,11 +101,11 @@ if (isset($_GET['id'])) {
                     </div>
                     <div class="col-md-6">
                         <label class="my-2 fst-italic">Phone</label>
-                        <input type="text" class="form-control" placeholder=" phone" name="phone" value="<?php echo $phone ?>">
+                        <input type="text" class="form-control" placeholder=" phone" name="phone" value="<?php echo $phone ?? "empty" ?>">
                     </div>
                     <div class="col-md-6">
                         <label class="my-2 fst-italic">Status</label>
-                        <input type="text" class="form-control" placeholder="status" name="status" value="<?php echo $status ?>">
+                        <input type="text" class="form-control" placeholder="status" name="status" value="<?php echo $status ? $status : "Empty" ?>">
                     </div>
                     <div class="col-md-6">
                         <label class="my-2 fst-italic">Upload Profile Image</label>
